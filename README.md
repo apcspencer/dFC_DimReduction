@@ -1,5 +1,7 @@
 ## Dynamic Functional Connectivity Analysis with Sliding-Window Correlations, Dimensionality Reduction and k-means Clustering
 
+Code to accompany Spencer APC & Goodfellow M 2021 "Using Deep Clustering to Improve fMRI Dynamic Functional Connectivity Analysis" bioRxiv doi: https://doi.org/10.1101/2021.12.14.472680
+
 This code runs sliding-window correlations (SWC) on preprocessed node-averaged timeseries data, followed by an optional dimensionality reduction step using either PCA, UMAP or autoencoders, then k-means clustering to find dynamic functional connectivity states. Place raw timeseries data into the data/raw_tseries folder, with one .csv file per subject.
 
 Run `python3 main.py -h` for help, or see run.sh for examples. To see a demonstration, use the create_toysimulation.m script in the SimTB_model_wrapper folder to generate synthetic data, then move this to the data/raw_tseries folder and run `./run.sh`.
