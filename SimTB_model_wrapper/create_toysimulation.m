@@ -1,9 +1,10 @@
 % Code adapted from Allen et al., "Tracking whole-brain connectivity dynamics in the resting state." Cereb Cortex. 2014 24(3):663-76. 
-% Dependency: SimTB toolbox (https://trendscenter.org/trends/software/simtb/)
-
+% Dependencies: SimTB toolbox (https://trendscenter.org/trends/software/simtb/)
+%               Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/home)
 %%
 clear all; close all; clc
 addpath(genpath('simtb_v18')) % path to SimTB toolbox directory
+addpath ../../MATLAB/BCT/     % path to Brain Connectivity Toolbox Directory
 
 mkdir synthetic; mkdir synthetic/ground_truth; mkdir synthetic/states % output directories
 output_folder = 'synthetic/';
