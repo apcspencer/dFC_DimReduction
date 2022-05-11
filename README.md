@@ -1,6 +1,6 @@
 ## Dynamic Functional Connectivity Analysis with Sliding-Window Correlations, Dimensionality Reduction and k-means Clustering
 
-Code to accompany Spencer APC & Goodfellow M 2021 "Using Deep Clustering to Improve fMRI Dynamic Functional Connectivity Analysis" bioRxiv doi: https://doi.org/10.1101/2021.12.14.472680
+Code to accompany Spencer APC & Goodfellow M 2022 "Using Deep Clustering to Improve fMRI Dynamic Functional Connectivity Analysis" NeuroImage. doi: https://doi.org/10.1016/j.neuroimage.2022.119288
 
 This code runs sliding-window correlations (SWC) on preprocessed node-averaged timeseries data, followed by an optional dimensionality reduction step using either PCA, UMAP or autoencoders, then k-means clustering to find dynamic functional connectivity states. Place raw timeseries data into the data/raw_tseries folder, with one .csv file per subject.
 
